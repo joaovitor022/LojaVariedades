@@ -1,80 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Online</title>
-    <link rel="stylesheet" href="styles1.css">
+    <title>Site de Jogos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="../Front/index.html">
-                    <img src="../assest/White_Modern_Minimalist_Signature_Brand_Logo-removebg-preview.png"
-                        alt="Minha Loja">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="../Front/product-details.html">Produtos</a></li>
-                    <li><a href="../Front/cart.html" class="cart-link">
-                            <img class="imagem" src="../assest/teste-removebg-preview.png">
-                        </a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <h1>Bem-vindo ao Site de Jogos</h1>
+        <nav>
+            <ul>
+                <li><a href="#acao">Ação</a></li>
+                <li><a href="#aventura">Aventura</a></li>
+                <li><a href="#estrategia">Estratégia</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
-        <section class="products">
-            <div class="product" data-id="1">
-                <img src="../assest/Iphone1.png" alt="Apple iPhone 14 (128 GB) – Roxo">
-                <h3>Apple iPhone 14 (128 GB) – Roxo</h3>
-                <p>R$3.869,01</p>
-                <button class="view-details">Ver Detalhes</button>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product" data-id="2">
-                <img src="img/produto2.jpg" alt="Produto 2">
-                <h3>Produto 2</h3>
-                <p>R$ 80,00</p>
-                <button class="view-details">Ver Detalhes</button>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product" data-id="3">
-                <img src="img/produto3.jpg" alt="Produto 3">
-                <h3>Produto 3</h3>
-                <p>R$ 120,00</p>
-                <button class="view-details">Ver Detalhes</button>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>
-            <div class="product" data-id="4">
-                <img src="img/produto4.jpg" alt="Produto 4">
-                <h3>Produto 4</h3>
-                <p>R$ 150,00</p>
-                <button class="view-details">Ver Detalhes</button>
-                <button class="add-to-cart">Adicionar ao Carrinho</button>
-            </div>
+        <section id="acao">
+            <h2>Jogos de Ação</h2>
+            <article>
+                <h3>Jogo 1</h3>
+                <p>Descrição do Jogo 1. <a href="#">Saiba mais</a></p>
+            </article>
+            <article>
+                <h3>Jogo 2</h3>
+                <p>Descrição do Jogo 2. <a href="#">Saiba mais</a></p>
+            </article>
         </section>
-
-        <section class="about-us">
-            <h1>Quem Somos</h1>
-            <p>Somos uma loja online dedicada a oferecer produtos de alta qualidade para nossos clientes.</p>
+        <section id="aventura">
+            <h2>Jogos de Aventura</h2>
+            <article>
+                <h3>Jogo 3</h3>
+                <p>Descrição do Jogo 3. <a href="#">Saiba mais</a></p>
+            </article>
+            <article>
+                <h3>Jogo 4</h3>
+                <p>Descrição do Jogo 4. <a href="#">Saiba mais</a></p>
+            </article>
+        </section>
+        <section id="estrategia">
+            <h2>Jogos de Estratégia</h2>
+            <article>
+                <h3>Jogo 5</h3>
+                <p>Descrição do Jogo 5. <a href="#">Saiba mais</a></p>
+            </article>
+            <article>
+                <h3>Jogo 6</h3>
+                <p>Descrição do Jogo 6. <a href="#">Saiba mais</a></p>
+            </article>
         </section>
     </main>
-
-    <script>
-        document.querySelectorAll('.view-details').forEach(button => {
-            button.addEventListener('click', function () {
-                const productId = this.closest('.product').getAttribute('data-id');
-                window.location.href = `product-details.html?id=${productId}`;
-            });
-        });
-    </script>
-    <script src="../Front/js/script.js"></script>
+    <footer>
+        <p>&copy; 2024 Site de Jogos. Todos os direitos reservados.</p>
+    </footer>
 </body>
-
 </html>
