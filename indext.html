@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrinho de Compras - Minha Loja</title>
+    <link rel="stylesheet" href="../Css/styles1.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">Minha Loja</div>
+        <nav>
+            <ul>
+                <li><a href="../Front/index.html">Home</a></li>
+                <li><a href="../Front/product.html">Produtos</a></li>
+                <li><a href="../Front/cart.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Carrinho de Compras</h1>
+        <section class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Os itens do carrinho serão inseridos aqui -->
+                </tbody>
+            </table>
 </body>
 </html>
